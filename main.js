@@ -1,10 +1,8 @@
 import { gsap } from "gsap"
-import imagesLoaded from "imagesloaded"
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
- }
-await sleep(4000);
+
+await new Promise(resolve => setTimeout(resolve, 4000));
+
 
 gsap.to('svg',{
         scale: 0
